@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +18,52 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="knob_background_img" translatesAutoresizingMaskIntoConstraints="NO" id="CAf-6j-obv">
+                                <rect key="frame" x="76" y="76" width="450" height="450"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CAf-6j-obv" secondAttribute="height" multiplier="1:1" id="vvW-td-cdP"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red" translatesAutoresizingMaskIntoConstraints="NO" id="Raq-xi-zew">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Raq-xi-zew" secondAttribute="height" multiplier="1:1" id="skl-7p-eqV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="knob_img" translatesAutoresizingMaskIntoConstraints="NO" id="eWM-Pn-fja">
+                                <rect key="frame" x="165" y="165" width="270" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eWM-Pn-fja" secondAttribute="height" multiplier="1:1" id="Map-8J-n2y"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="CAf-6j-obv" secondAttribute="centerY" id="4pz-Mg-ey1"/>
+                            <constraint firstItem="Raq-xi-zew" firstAttribute="width" secondItem="CAf-6j-obv" secondAttribute="width" multiplier="292:439" id="G32-7e-eb7"/>
+                            <constraint firstAttribute="centerY" secondItem="Raq-xi-zew" secondAttribute="centerY" id="LjD-dH-JTt"/>
+                            <constraint firstAttribute="centerX" secondItem="eWM-Pn-fja" secondAttribute="centerX" id="PnE-OZ-e0f"/>
+                            <constraint firstItem="eWM-Pn-fja" firstAttribute="width" secondItem="Raq-xi-zew" secondAttribute="width" multiplier="264:292" id="STm-wj-xnJ"/>
+                            <constraint firstItem="CAf-6j-obv" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="3:4" id="UXa-6H-cgl"/>
+                            <constraint firstAttribute="centerY" secondItem="eWM-Pn-fja" secondAttribute="centerY" id="kly-LX-lOb"/>
+                            <constraint firstAttribute="centerX" secondItem="Raq-xi-zew" secondAttribute="centerX" id="pW2-T6-A0I"/>
+                            <constraint firstAttribute="centerX" secondItem="CAf-6j-obv" secondAttribute="centerX" id="vck-9Q-1Us"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="CAf-6j-obv" id="ls2-Da-dTK"/>
+                        <outlet property="knobImageView" destination="eWM-Pn-fja" id="1Jj-rS-rC6"/>
+                        <outlet property="ringImageView" destination="Raq-xi-zew" id="xhL-Wg-1gY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="knob_background_img" width="439" height="439"/>
+        <image name="knob_img" width="264" height="264"/>
+        <image name="red" width="292" height="293"/>
+    </resources>
 </document>

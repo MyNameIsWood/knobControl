@@ -14,6 +14,11 @@
 		9336AD481B84378900A2B68A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9336AD471B84378900A2B68A /* Images.xcassets */; };
 		9336AD4B1B84378900A2B68A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9336AD491B84378900A2B68A /* LaunchScreen.xib */; };
 		9336AD571B84378900A2B68A /* knobControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9336AD561B84378900A2B68A /* knobControlTests.m */; };
+		9336AD621B8439E900A2B68A /* BMKnobSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9336AD611B8439E900A2B68A /* BMKnobSensor.m */; };
+		FD1786281B86D8C40017E681 /* ProgressCircleBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1786271B86D8C40017E681 /* ProgressCircleBar.m */; };
+		FD469EAE1B8AEB5F0060B1EB /* BMFiveButtonControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FD469EAD1B8AEB5F0060B1EB /* BMFiveButtonControl.m */; };
+		FD469EB71B8AF4A10060B1EB /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = FD469EB61B8AF4A10060B1EB /* UIView+Frame.m */; };
+		FD469EBA1B8AFD060060B1EB /* BMButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FD469EB91B8AFD060060B1EB /* BMButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,16 @@
 		9336AD501B84378900A2B68A /* knobControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = knobControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9336AD551B84378900A2B68A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9336AD561B84378900A2B68A /* knobControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = knobControlTests.m; sourceTree = "<group>"; };
+		9336AD601B8439E900A2B68A /* BMKnobSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKnobSensor.h; sourceTree = "<group>"; };
+		9336AD611B8439E900A2B68A /* BMKnobSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKnobSensor.m; sourceTree = "<group>"; };
+		FD1786261B86D8C40017E681 /* ProgressCircleBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressCircleBar.h; sourceTree = "<group>"; };
+		FD1786271B86D8C40017E681 /* ProgressCircleBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressCircleBar.m; sourceTree = "<group>"; };
+		FD469EAC1B8AEB5F0060B1EB /* BMFiveButtonControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFiveButtonControl.h; sourceTree = "<group>"; };
+		FD469EAD1B8AEB5F0060B1EB /* BMFiveButtonControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMFiveButtonControl.m; sourceTree = "<group>"; };
+		FD469EB51B8AF4A10060B1EB /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		FD469EB61B8AF4A10060B1EB /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		FD469EB81B8AFD060060B1EB /* BMButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMButton.h; sourceTree = "<group>"; };
+		FD469EB91B8AFD060060B1EB /* BMButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +104,16 @@
 				9336AD471B84378900A2B68A /* Images.xcassets */,
 				9336AD491B84378900A2B68A /* LaunchScreen.xib */,
 				9336AD3A1B84378900A2B68A /* Supporting Files */,
+				9336AD601B8439E900A2B68A /* BMKnobSensor.h */,
+				9336AD611B8439E900A2B68A /* BMKnobSensor.m */,
+				FD1786261B86D8C40017E681 /* ProgressCircleBar.h */,
+				FD1786271B86D8C40017E681 /* ProgressCircleBar.m */,
+				FD469EAC1B8AEB5F0060B1EB /* BMFiveButtonControl.h */,
+				FD469EAD1B8AEB5F0060B1EB /* BMFiveButtonControl.m */,
+				FD469EB51B8AF4A10060B1EB /* UIView+Frame.h */,
+				FD469EB61B8AF4A10060B1EB /* UIView+Frame.m */,
+				FD469EB81B8AFD060060B1EB /* BMButton.h */,
+				FD469EB91B8AFD060060B1EB /* BMButton.m */,
 			);
 			path = knobControl;
 			sourceTree = "<group>";
@@ -219,6 +244,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD469EBA1B8AFD060060B1EB /* BMButton.m in Sources */,
+				FD469EB71B8AF4A10060B1EB /* UIView+Frame.m in Sources */,
+				FD469EAE1B8AEB5F0060B1EB /* BMFiveButtonControl.m in Sources */,
+				9336AD621B8439E900A2B68A /* BMKnobSensor.m in Sources */,
+				FD1786281B86D8C40017E681 /* ProgressCircleBar.m in Sources */,
 				9336AD431B84378900A2B68A /* ViewController.m in Sources */,
 				9336AD401B84378900A2B68A /* AppDelegate.m in Sources */,
 				9336AD3D1B84378900A2B68A /* main.m in Sources */,
@@ -348,6 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = knobControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = knobControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +448,7 @@
 				9336AD5C1B84378900A2B68A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9336AD5D1B84378900A2B68A /* Build configuration list for PBXNativeTarget "knobControlTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +457,7 @@
 				9336AD5F1B84378900A2B68A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
